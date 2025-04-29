@@ -46,7 +46,7 @@ jobs:
       uses: actions/checkout@v4
     - name: check-spelling
       id: spelling
-      uses: check-spelling/check-spelling@v0.0.20-alpha3
+      uses: check-spelling/check-spelling@v0.0.22
       with:
         suppress_push_for_open_pull_request: 1
         post_comment: 0
@@ -79,7 +79,7 @@ jobs:
         name: "check-spelling-comment-${{ github.run_id }}"
         path: /tmp/data
     - name: comment
-      uses: check-spelling/check-spelling@v0.0.20-alpha3
+      uses: check-spelling/check-spelling@v0.0.22
       with:
         custom_task: comment
         internal_state_directory: /tmp/data
